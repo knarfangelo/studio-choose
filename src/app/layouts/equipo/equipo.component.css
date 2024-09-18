@@ -1,0 +1,33 @@
+header{
+  background: linear-gradient(180deg, #0E2A52 0%, #174079 23%, #174079 85%, #0E2A52 100%);
+  padding-bottom: 335px;
+}
+h1{
+  margin: 0;
+  text-align: center;
+  color: #F9C75E;
+font-family: Poppins;
+font-size: 51.2px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 221px;
+padding-bottom: 117px;
+}
+
+main{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.nombre{
+  color: #fff;
+}
+.cargo{
+  color:#F9C75E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; 
+}

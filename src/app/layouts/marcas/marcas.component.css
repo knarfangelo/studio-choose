@@ -1,0 +1,43 @@
+.marcas{
+  width: 100%;
+  background-color: #0E2A52;
+  padding-top: 130px;
+}
+h1{
+  text-align: center;
+  margin: 0;
+  padding: 80px;
+  color: #F9C75E;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 51.2px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.marcas-1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+@media (width < 900px){
+  h1{
+    padding: 0;
+    padding-bottom: 77px;
+    font-size: 35px;
+  }
+  img{
+    width: 100%;
+  }
+  main{
+    box-sizing: border-box;
+    padding: 32.5px;
+  }
+  .marcas-1{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+}

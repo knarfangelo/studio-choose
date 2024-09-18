@@ -1,0 +1,36 @@
+header{
+  background:#0E2A52;
+}
+h1{
+  color: #F9C75E;
+text-align: center;
+font-family: Poppins;
+font-size: 51.2px;
+margin: 0;
+padding-top: 72px;
+padding-bottom: 200px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+main{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.panel-1, .panel-2{
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-1{
+  gap: 192px;
+}
+.panel-2{
+  gap: 194px;
+}
+
+.img2{
+  padding-top: 156px;
+}
