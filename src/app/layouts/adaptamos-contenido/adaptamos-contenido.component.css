@@ -13,34 +13,11 @@ h1 {
   font-size: 51.2px;
   font-weight: 700;
 }
-
-swiper-container {
-  width: 100%;
-  max-width: 1900px;
-  height: auto;
-}
-
-swiper-slide {
+swiper-slide{
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 300px; /* Ajusta el ancho de cada slide */
+  justify-content: center;
 }
-
-app-cards {
-  width: 250px; /* Asegura que las tarjetas ocupen todo el ancho del slide */
-}
-
-@media (max-width: 900px) {
-  h1 {
-    font-size: 35px;
-  }
-
-  app-cards {
-    width: 80%; /* Ajusta el ancho de las tarjetas en pantallas pequeñas */
-  }
-
-  swiper-slide {
-    width: 250px; /* Cambia el tamaño de los slides en pantallas pequeñas */
-  }
+swiper-container{
+  max-width: 1140px;
 }

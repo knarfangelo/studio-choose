@@ -1,5 +1,5 @@
 header{
-  width: 204px;
+  width: auto;
   position: relative;
 }
 
@@ -51,5 +51,5 @@ main{
   background-color: #fff;
   border-radius: 4px;
   box-sizing: border-box;
-  padding: 0 19px;
+  padding: 0 10px;
 }

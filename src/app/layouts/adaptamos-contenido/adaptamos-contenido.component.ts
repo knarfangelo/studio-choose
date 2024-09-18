@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, signal, ViewChild } from '@angular/core';
 import { CardsComponent } from "../../components/cards/cards.component";
-import { register } from 'swiper/element/bundle';
+import { register, SwiperContainer } from 'swiper/element/bundle';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import { SwiperOptions } from 'swiper/types';
 
-register(); // Registra el Swiper
+register();
 
 @Component({
   selector: 'app-adaptamos-contenido',
@@ -17,7 +18,7 @@ register(); // Registra el Swiper
   template: `
     <section class="adaptamos-contenido">
       <h1>Nos adaptamos a tu contenido</h1>
-      <swiper-container #swiperEl>
+      <swiper-container init=false>
         <swiper-slide>
           <app-cards image="icons/webinars.svg" title="WEBINARS" description="Transmite tus cursos, charlas, clases en vivo o grabadas, etc."></app-cards>
         </swiper-slide>
@@ -40,30 +41,42 @@ register(); // Registra el Swiper
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AdaptamosContenidoComponent {
-  @ViewChild('swiperEl') swiperEl!: any;
 
-  ngAfterViewInit(): void {
-    const swiperParams = {
-      effect: 'coverflow', // Activa el efecto coverflow
-      grabCursor: true, // Cambia el cursor a "grabbing"
-      centeredSlides: true, // Centra el slide principal
-      slidesPerView: 'auto', // Ajusta automáticamente el tamaño del slide
-      spaceBetween: 20, // Espacio entre slides
-      coverflowEffect: { // Configuración del efecto coverflow
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows: true, // Muestra sombras en los slides laterales
+  swiperElements = signal<SwiperContainer | null>(null);
+
+
+
+  ngOnInit(): void {
+    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperOptions: SwiperOptions = {
+      navigation:{
+        enabled:true,
+        nextEl:'.swiper-button-next',
+        prevEl:'.swiper-button-prev',
       },
-      pagination: true, // Activa la paginación
-      modules: [EffectCoverflow, Pagination], // Módulos utilizados
+      slidesPerView: 'auto',
+      speed: 3000,
+      spaceBetween: 30,
+      breakpoints: {
+        0:{
+          slidesPerView:1,
+        },
+        1200: {
+          slidesPerView:2,
+        },
+        1400: {
+          slidesPerView:4,
+        },
+        1500: {
+          slidesPerView:5,
+        },
+      },
     };
-
-    // Asigna los parámetros al elemento Swiper
-    Object.assign(this.swiperEl.nativeElement, swiperParams);
-
-    // Inicializa el swiper
-    this.swiperEl.nativeElement.initialize();
+    Object.assign(swiperElemConstructor!, swiperOptions);
+    this.swiperElements.set(swiperElemConstructor as SwiperContainer);
+    this.swiperElements()?.initialize();
   }
+
+
+  
 }

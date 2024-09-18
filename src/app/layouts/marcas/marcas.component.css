@@ -22,7 +22,6 @@ h1{
   justify-content: center;
   gap: 60px;
 }
-
 @media (width < 900px){
   h1{
     padding: 0;
