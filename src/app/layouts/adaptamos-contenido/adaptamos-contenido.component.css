@@ -20,3 +20,10 @@ swiper-container{
 .swiper-wrapper{
   display: flex;
 }
+@media (width < 900px){
+  h1{
+    font-size: 35px;
+    margin: 0 10px;
+    padding-bottom: 55px;
+  }
+}

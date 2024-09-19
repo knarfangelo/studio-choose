@@ -45,13 +45,24 @@ register();
               ></app-equipos>
           </swiper-slide>
           <swiper-slide>
-              <app-equipos></app-equipos>
+              <app-equipos
+              title="Micrófonos de estudio"
+              description="Micrófonos profesionales capturan audio preciso, sensible y de alta calidad."
+              image="equipos/microfono-de-estudio.png"
+              ></app-equipos>
           </swiper-slide>
           <swiper-slide>
-              <app-equipos></app-equipos>
+              <app-equipos
+              title="Hollyland lark m2"
+              description="Micrófono inalámbrico ultraligero. Es perfecto para vloggers, podcasters, etc."
+              image="equipos/hollyland-lark-m2.png"
+              ></app-equipos>
           </swiper-slide>
           <swiper-slide>
-              <app-equipos></app-equipos>
+              <app-equipos
+              title="Blackmagic ATEM Mini Pro"
+              description="Conmutador compacto para transmisión en vivo, grabación, y producción de video."
+              image="equipos/blackmagic-atem-mini-pro.png"></app-equipos>
           </swiper-slide>
           
         </swiper-container>
@@ -79,18 +90,23 @@ export class EquiposGrabacionComponent {
       slidesPerView: 'auto',
       speed: 1000,
       spaceBetween: 50,
+      initialSlide: 2,
+      centeredSlides: true,
       breakpoints: {
         0:{
-          slidesPerView:1,
+          slidesPerView:1.5,
+        },
+        1000: {
+          slidesPerView:2,
         },
         1200: {
-          slidesPerView:2,
+          slidesPerView:3,
         },
         1400: {
           slidesPerView:4,
         },
         1500: {
-          slidesPerView:4.2,
+          slidesPerView:4.3,
         },
       },
     };

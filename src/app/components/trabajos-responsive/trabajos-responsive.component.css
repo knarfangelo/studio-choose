@@ -1,0 +1,28 @@
+h1,p {
+  margin: 0;
+
+}
+header{
+  max-width: 350px;
+}
+
+h1{
+  color: var(--Color-2, #F9C75E);
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 25px; /* 156.25% */
+text-align: start;
+}
+p{
+  color: #FFF;
+font-family: Poppins;
+font-size: 17.6px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+img{
+  width: 100%;
+}

@@ -31,3 +31,17 @@ swiper-container{
   flex-shrink: 1;  /* Ambas cajas pueden encogerse de manera equitativa si es necesario */
   flex-basis: 0;   /* Ambas cajas empiezan desde el mismo tamaño base */
 }
+
+@media (width < 900px){
+  h1{
+    font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 10px;
+
+  }
+  main{
+    padding: 0;
+  }
+}
+

@@ -17,6 +17,7 @@ main{
   display: flex;
   gap: 30px;
   justify-content: center;
+  padding: 0 30px;
 }
 
 .panel-1, .panel-2{
@@ -30,7 +31,28 @@ main{
 .panel-2{
   gap: 194px;
 }
-
+img{
+  width: 100%;
+}
 .img2{
   padding-top: 156px;
+}
+swiper-container{
+  display: none;
+}
+@media (width < 900px){
+  h1{
+    font-size: 35px;
+    padding-bottom: 47px;
+    margin: 0 10px;
+  }
+  swiper-container{
+    display: block;
+  }
+  main{
+    display: none;
+  }
+  .text{
+    display: none;
+  }
 }

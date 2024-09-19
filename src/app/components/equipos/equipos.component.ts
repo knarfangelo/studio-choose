@@ -13,6 +13,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
         <h1>{{title}}</h1>
         <p>{{description}}</p>
       </main>
+      <img [src]="image" alt="" [name]="image">
     </header>
   `,
   styleUrl: './equipos.component.css',

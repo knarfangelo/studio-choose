@@ -55,20 +55,34 @@ export class AdaptamosContenidoComponent {
         prevEl:'.swiper-button-prev',
       },
       slidesPerView: 'auto',
-      speed: 3000,
+      centeredSlides: true,
+      speed: 1000,
+      initialSlide: 2,
       spaceBetween: 30,
       breakpoints: {
         0:{
-          slidesPerView:1,
+          slidesPerView:1.5,
+          allowTouchMove: true,
+          loop: true,
         },
         1200: {
-          slidesPerView:2,
+          slidesPerView:3,
+          loop: true,
+          allowTouchMove: true,
         },
         1400: {
-          slidesPerView:4,
+          slidesPerView:3,
+          loop: true,
+          allowTouchMove: true,
         },
         1500: {
+          slidesPerView:4,
+          loop: true,
+          allowTouchMove: true,
+        },
+        1600: {
           slidesPerView:5,
+          allowTouchMove: false,
         },
       },
     };
