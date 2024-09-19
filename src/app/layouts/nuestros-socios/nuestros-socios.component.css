@@ -18,17 +18,28 @@ main{
     display: flex;
     width: 100%;
     align-items: center;
-    justify-content: center;
-    gap: 150px;
+    justify-content: space-evenly;
 }
-img{
-  display: flex;
-  width: 100%;
-  max-width: 350px;
+.dron{
+  width: 33%;
+  max-width: 355px;
+  box-sizing: border-box;
+  padding: 40px;
 }
 
 @media (width < 900px) {
+  h1{
+    font-size: 35px;
+  }
   main{
+    display: flex;
     flex-direction: column;
+    gap: 50px;
+  }
+  h1{
+    margin-bottom: 50px;
+  }
+  .dron{
+    width: 100%;
   }
 }

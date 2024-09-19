@@ -18,7 +18,13 @@ register();
         <swiper-container init=false class="swiper-equipo">
           <swiper-slide>
         <section class="trabajador">
-          <img src="trabajadores/trabajador1.png" alt="">
+        <div class="contenedor-img">
+        <ul class="redes">
+            <li><img src="icons/facebook.svg" alt=""></li>
+            <li><img src="icons/twitter.svg" alt=""></li>
+            <li><img src="icons/youtube.svg" alt=""></li>
+          </ul>
+          <img src="trabajadores/trabajador1.png" alt=""></div>
           <p class="nombre">
             wimper
           </p>
@@ -28,7 +34,13 @@ register();
         </section></swiper-slide>
         <swiper-slide>
         <section class="trabajador">
-          <img src="trabajadores/trabajador2.png" alt="">
+        <div class="contenedor-img">
+        <ul class="redes">
+            <li><img src="icons/facebook.svg" alt=""></li>
+            <li><img src="icons/twitter.svg" alt=""></li>
+            <li><img src="icons/youtube.svg" alt=""></li>
+          </ul>
+          <img src="trabajadores/trabajador2.png" alt=""></div>
           <p class="nombre">
             wimper
           </p>
@@ -38,7 +50,13 @@ register();
         </section></swiper-slide>
         <swiper-slide>
         <section class="trabajador">
-          <img src="trabajadores/trabajador3.png" alt="">
+        <div class="contenedor-img">
+        <ul class="redes">
+            <li><img src="icons/facebook.svg" alt=""></li>
+            <li><img src="icons/twitter.svg" alt=""></li>
+            <li><img src="icons/youtube.svg" alt=""></li>
+          </ul>
+          <img src="trabajadores/trabajador3.png" alt=""></div>
           <p class="nombre">
             wimper
           </p>
@@ -48,7 +66,13 @@ register();
         </section></swiper-slide>
         <swiper-slide>
         <section class="trabajador">
-          <img src="trabajadores/trabajador4.png" alt="">
+          <div class="contenedor-img">
+        <ul class="redes">
+            <li><img src="icons/facebook.svg" alt=""></li>
+            <li><img src="icons/twitter.svg" alt=""></li>
+            <li><img src="icons/youtube.svg" alt=""></li>
+          </ul>
+          <img src="trabajadores/trabajador4.png" alt=""></div>
           <p class="nombre">
             wimper
           </p>

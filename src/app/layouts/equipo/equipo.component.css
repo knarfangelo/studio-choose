@@ -34,6 +34,23 @@ main{
   left: 0;
   right: 0;
   margin: auto;
+
+}
+.trabajador{
+  position: relative;
+}
+.contenedor-img{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.redes{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #060606;
+  padding: 7px 3px;
 }
 @media (width < 900px){
   h1{

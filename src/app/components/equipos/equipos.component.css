@@ -36,6 +36,14 @@ img{
   height: auto;
 }
 
+.redes{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+}
+
 @media (width < 900px){
   header{
     border-radius: 10px;

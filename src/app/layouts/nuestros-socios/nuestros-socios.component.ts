@@ -11,9 +11,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   <header>
     <h1>Nuestros Socios</h1>
     <main>
-      <img src="icons/dron.svg" alt="">
-      <img src="icons/dron.svg" alt="">
-      <img src="icons/dron.svg" alt="">
+      <img class="dron" src="icons/dron.svg" alt="">
+      <img class="dron" src="icons/dron.svg" alt="">
+      <img class="dron" src="icons/dron.svg" alt="">
     </main>
     
   </header>
