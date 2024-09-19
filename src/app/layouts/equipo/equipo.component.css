@@ -30,6 +30,7 @@ img{
 }
 main{
   width: 80%;
+  max-width: 1300px;
   left: 0;
   right: 0;
   margin: auto;
