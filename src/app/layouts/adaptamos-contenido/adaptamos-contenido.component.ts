@@ -18,7 +18,7 @@ register();
   template: `
     <section class="adaptamos-contenido">
       <h1>Nos adaptamos a tu contenido</h1>
-      <swiper-container init=false>
+      <swiper-container class="swiper-adaptamos" init=false>
         <swiper-slide>
           <app-cards image="icons/webinars.svg" title="WEBINARS" description="Transmite tus cursos, charlas, clases en vivo o grabadas, etc."></app-cards>
         </swiper-slide>
@@ -47,7 +47,7 @@ export class AdaptamosContenidoComponent {
 
 
   ngOnInit(): void {
-    const swiperElemConstructor = document.querySelector('swiper-container');
+    const swiperElemConstructor = document.querySelector('.swiper-adaptamos');
     const swiperOptions: SwiperOptions = {
       navigation:{
         enabled:true,

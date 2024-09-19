@@ -20,6 +20,7 @@ h1{
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 60px;
 }
 @media (width < 900px){

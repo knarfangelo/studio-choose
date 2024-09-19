@@ -1,0 +1,36 @@
+header{
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  background-color: #fff;
+}
+main{
+  box-sizing: border-box;
+  padding: 0 12px;
+}
+h1,p{
+  margin: 0;
+}
+h1{
+  color: #F9C75E;
+font-family: Poppins;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-top: 12px;
+}
+p{
+  color: #0E2A52;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 5px;
+}
+img{
+  display: flex;
+  width: 100%;
+  height: auto;
+}

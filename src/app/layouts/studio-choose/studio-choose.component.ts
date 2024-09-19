@@ -5,6 +5,7 @@ import { MarcasComponent } from "../marcas/marcas.component";
 import { AdaptamosContenidoComponent } from "../adaptamos-contenido/adaptamos-contenido.component";
 import { TrabajosComponent } from "../trabajos/trabajos.component";
 import { EquipoComponent } from "../equipo/equipo.component";
+import { EquiposGrabacionComponent } from "../equipos-grabacion/equipos-grabacion.component";
 
 @Component({
   selector: 'app-studio-choose',
@@ -15,13 +16,15 @@ import { EquipoComponent } from "../equipo/equipo.component";
     MarcasComponent,
     AdaptamosContenidoComponent,
     TrabajosComponent,
-    EquipoComponent
+    EquipoComponent,
+    EquiposGrabacionComponent
 ],
   template: `
     <app-studio></app-studio>
     <app-marcas></app-marcas>
     <app-adaptamos-contenido></app-adaptamos-contenido>
     <app-trabajos></app-trabajos>
+    <app-equipos-grabacion></app-equipos-grabacion>
     <app-equipo></app-equipo>
   `,
   styleUrl: './studio-choose.component.css',

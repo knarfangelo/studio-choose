@@ -1,0 +1,33 @@
+header{
+  background: #0E2A52;
+}
+h1{
+  color: #F9C75E;
+font-family: Poppins;
+font-size: 54px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: center;
+margin: 0;
+}
+h1{
+  padding-top: 155px;
+  padding-bottom: 85px;
+}
+
+app-equipos{
+  width: 205px;
+}
+
+main{
+  padding: 0 37px;
+  padding-right: 0;
+}
+swiper-container{
+  display: flex;
+  height: auto;
+  flex-grow: 1;    /* Ambas cajas pueden crecer de manera equitativa */
+  flex-shrink: 1;  /* Ambas cajas pueden encogerse de manera equitativa si es necesario */
+  flex-basis: 0;   /* Ambas cajas empiezan desde el mismo tamaño base */
+}

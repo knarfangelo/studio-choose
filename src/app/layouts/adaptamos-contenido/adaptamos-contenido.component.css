@@ -13,11 +13,10 @@ h1 {
   font-size: 51.2px;
   font-weight: 700;
 }
-swiper-slide{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 swiper-container{
   max-width: 1140px;
+  display: flex;
+}
+.swiper-wrapper{
+  display: flex;
 }
