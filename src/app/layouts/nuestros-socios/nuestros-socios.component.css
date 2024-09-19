@@ -1,0 +1,34 @@
+header{
+  background: #0E2A52;
+  min-height: 1200px;
+  width: 100%;
+}
+h1{
+  color: #F9C75E;
+font-family: Poppins;
+text-align: center;
+margin: 0;
+font-size: 54px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 185px;
+}
+main{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+img{
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+}
+
+@media (width < 900px) {
+  main{
+    flex-direction: column;
+  }
+}

@@ -6,6 +6,7 @@ import { AdaptamosContenidoComponent } from "../adaptamos-contenido/adaptamos-co
 import { TrabajosComponent } from "../trabajos/trabajos.component";
 import { EquipoComponent } from "../equipo/equipo.component";
 import { EquiposGrabacionComponent } from "../equipos-grabacion/equipos-grabacion.component";
+import { NuestrosSociosComponent } from "../nuestros-socios/nuestros-socios.component";
 
 @Component({
   selector: 'app-studio-choose',
@@ -17,7 +18,8 @@ import { EquiposGrabacionComponent } from "../equipos-grabacion/equipos-grabacio
     AdaptamosContenidoComponent,
     TrabajosComponent,
     EquipoComponent,
-    EquiposGrabacionComponent
+    EquiposGrabacionComponent,
+    NuestrosSociosComponent
 ],
   template: `
     <app-studio></app-studio>
@@ -26,6 +28,7 @@ import { EquiposGrabacionComponent } from "../equipos-grabacion/equipos-grabacio
     <app-trabajos></app-trabajos>
     <app-equipos-grabacion></app-equipos-grabacion>
     <app-equipo></app-equipo>
+    <app-nuestros-socios></app-nuestros-socios>
   `,
   styleUrl: './studio-choose.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
