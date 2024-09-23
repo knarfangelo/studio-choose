@@ -3,6 +3,8 @@ header{
   flex-direction: column;
   border-radius: 25px;
   background-color: #fff;
+  justify-content: space-between;
+  height: 100%;
 }
 main{
   box-sizing: border-box;

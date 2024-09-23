@@ -88,9 +88,14 @@ export class EquiposGrabacionComponent {
         prevEl:'.swiper-button-prev',
       },
       slidesPerView: 'auto',
-      speed: 1000,
+      speed: 5000,
       spaceBetween: 50,
       initialSlide: 2,
+      loop: true,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: true
+      },
       centeredSlides: true,
       breakpoints: {
         0:{

@@ -19,33 +19,17 @@ register();
           <swiper-slide>
         <section class="trabajador">
         <div class="contenedor-img">
-        <ul class="redes">
-            <li><img src="icons/facebook.svg" alt=""></li>
-            <li><img src="icons/twitter.svg" alt=""></li>
-            <li><img src="icons/youtube.svg" alt=""></li>
-          </ul>
-          <img src="trabajadores/trabajador1.png" alt=""></div>
-          <p class="nombre">
-            wimper
-          </p>
+          <img src="trabajadores/director-de-switcher.png" alt=""></div>
           <p class="cargo">
-            Developer
+            Directo de switcher
           </p>
         </section></swiper-slide>
         <swiper-slide>
         <section class="trabajador">
         <div class="contenedor-img">
-        <ul class="redes">
-            <li><img src="icons/facebook.svg" alt=""></li>
-            <li><img src="icons/twitter.svg" alt=""></li>
-            <li><img src="icons/youtube.svg" alt=""></li>
-          </ul>
-          <img src="trabajadores/trabajador2.png" alt=""></div>
-          <p class="nombre">
-            wimper
-          </p>
+          <img src="trabajadores/Luminotecnico.png" alt=""></div>
           <p class="cargo">
-            Developer
+            Luminotécnico
           </p>
         </section></swiper-slide>
         <swiper-slide>
@@ -102,8 +86,6 @@ export class EquipoComponent {
         prevEl:'.swiper-button-prev',
       },
       slidesPerView: 1.8,
-      
-      
       speed: 1000,
       initialSlide: 2,
       spaceBetween: 30,

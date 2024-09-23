@@ -17,6 +17,9 @@ swiper-container{
   max-width: 1140px;
   display: flex;
 }
+swiper-slide{
+  height: auto;
+}
 .swiper-wrapper{
   display: flex;
 }
