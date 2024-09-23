@@ -58,13 +58,11 @@ export class AdaptamosContenidoComponent {
       breakpoints: {
         0:{
           slidesPerView:1.5,
-          allowTouchMove: true,
           loop: true,
           centeredSlides: true,
         },
         900: {
           slidesPerView: 3, // Fijo para que se ajuste
-          allowTouchMove: true,
           loop: false,
           initialSlide: 3,
           centeredSlides: true,
