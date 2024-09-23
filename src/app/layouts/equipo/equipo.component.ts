@@ -21,7 +21,7 @@ register();
         <div class="contenedor-img">
           <img src="trabajadores/director-de-switcher.png" alt=""></div>
           <p class="cargo">
-            Directo de switcher
+          Director de Switcher
           </p>
         </section></swiper-slide>
         <swiper-slide>
@@ -29,7 +29,7 @@ register();
         <div class="contenedor-img">
           <img src="trabajadores/Luminotecnico.png" alt=""></div>
           <p class="cargo">
-            Luminotécnico
+          Asistente de Luces
           </p>
         </section></swiper-slide>
         <swiper-slide>
