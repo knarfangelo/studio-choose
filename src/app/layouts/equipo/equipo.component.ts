@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, CUSTOM_ELEMENTS_SCHEMA, signal } from '@angular/core';
 import { register, SwiperContainer } from 'swiper/element';
@@ -19,7 +20,7 @@ register();
           <swiper-slide>
         <section class="trabajador">
         <div class="contenedor-img">
-          <img src="trabajadores/director-de-switcher.png" alt=""></div>
+          <img  src="trabajadores/director-de-switcher.png" alt=""></div>
           <p class="cargo">
           Director de Switcher
           </p>
@@ -35,33 +36,17 @@ register();
         <swiper-slide>
         <section class="trabajador">
         <div class="contenedor-img">
-        <ul class="redes">
-            <li><img src="icons/facebook.svg" alt=""></li>
-            <li><img src="icons/twitter.svg" alt=""></li>
-            <li><img src="icons/youtube.svg" alt=""></li>
-          </ul>
-          <img src="trabajadores/trabajador3.png" alt=""></div>
-          <p class="nombre">
-            wimper
-          </p>
+          <img src="trabajadores/camarografo.png" alt=""></div>
           <p class="cargo">
-            Developer
+          Camarógrafo
           </p>
         </section></swiper-slide>
         <swiper-slide>
         <section class="trabajador">
           <div class="contenedor-img">
-        <ul class="redes">
-            <li><img src="icons/facebook.svg" alt=""></li>
-            <li><img src="icons/twitter.svg" alt=""></li>
-            <li><img src="icons/youtube.svg" alt=""></li>
-          </ul>
-          <img src="trabajadores/trabajador4.png" alt=""></div>
-          <p class="nombre">
-            wimper
-          </p>
+          <img src="trabajadores/directora-de-arte.png" alt=""></div>
           <p class="cargo">
-            Developer
+          Directora de arte
           </p>
         </section></swiper-slide>
       </swiper-container>
@@ -69,9 +54,9 @@ register();
     </header>
   `,
   styleUrl: './equipo.component.css',
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EquipoComponent {
+
 
   swiperElements = signal<SwiperContainer | null>(null);
 

@@ -1,3 +1,4 @@
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
@@ -7,11 +8,25 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   imports: [
     CommonModule,
   ],
+  animations: [
+    trigger('enterState', [
+      state('void', style({
+        transform: 'translateX(-100%)',
+        opacity: 0
+      })),
+      transition(':enter', [
+        animate(300, style({
+          transform: 'translateX(0)',
+          opacity: 1
+        }))
+      ])
+    ])
+  ],
   template: `
     <section class="inicio">
       <header class="home">
       <img class="fondo-principal" src="fondo-principal.png" alt="">
-      <h1 class="titulo-principal">Estudio de Streaming</h1>
+      <h1 class="titulo-principal" @enterState>Estudio de Streaming</h1>
       </header>
       <main>
         <div class="part-1">
