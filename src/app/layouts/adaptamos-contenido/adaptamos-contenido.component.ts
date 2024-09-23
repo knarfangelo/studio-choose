@@ -38,16 +38,14 @@ register();
     </section>
   `,
   styleUrls: ['./adaptamos-contenido.component.css'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AdaptamosContenidoComponent {
 
-  swiperElements = signal<SwiperContainer | null>(null);
-
+  swiperElements: SwiperContainer | null = null;
 
 
   ngOnInit(): void {
-    const swiperElemConstructor = document.querySelector('.swiper-adaptamos');
+    const swiperElemConstructor = document.querySelector('.swiper-adaptamos') as SwiperContainer;
     const swiperOptions: SwiperOptions = {
       navigation:{
         enabled:true,
@@ -55,42 +53,32 @@ export class AdaptamosContenidoComponent {
         prevEl:'.swiper-button-prev',
       },
       slidesPerView: 'auto',
-      centeredSlides: true,
       speed: 1000,
-      initialSlide: 2,
       spaceBetween: 30,
       breakpoints: {
         0:{
           slidesPerView:1.5,
           allowTouchMove: true,
           loop: true,
+          centeredSlides: true,
         },
-        1200: {
-          slidesPerView:3,
-          loop: true,
+        900: {
+          slidesPerView: 3, // Fijo para que se ajuste
           allowTouchMove: true,
+          loop: false,
+          initialSlide: 3,
+          centeredSlides: true,
         },
-        1400: {
-          slidesPerView:3,
-          loop: true,
-          allowTouchMove: true,
-        },
-        1500: {
-          slidesPerView:4,
-          loop: true,
-          allowTouchMove: true,
-        },
-        1600: {
+        1300: {
           slidesPerView:5,
-          allowTouchMove: false,
+          enabled: false,
         },
       },
     };
-    Object.assign(swiperElemConstructor!, swiperOptions);
-    this.swiperElements.set(swiperElemConstructor as SwiperContainer);
-    this.swiperElements()?.initialize();
+    Object.assign(swiperElemConstructor, swiperOptions);
+    this.swiperElements = swiperElemConstructor;
+    this.swiperElements.initialize();
   }
-
 
   
 }
