@@ -46,6 +46,9 @@
 .part-1{
   margin-top: 60px;
 }
+a{
+  text-decoration: none;
+}
 main {
   color: white;
   background: var(--Color-6, #0E2A52);
@@ -57,8 +60,10 @@ main {
   display: flex;
 }
 
+
 .part-2{
   display: flex;
+  color: #fff;
   gap: 13px;
 }
 @media (width < 900px) {

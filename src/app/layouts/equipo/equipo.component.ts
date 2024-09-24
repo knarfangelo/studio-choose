@@ -20,7 +20,15 @@ register();
           <swiper-slide>
         <section class="trabajador">
         <div class="contenedor-img">
-          <img  src="trabajadores/director-de-switcher.png" alt=""></div>
+          <img  src="trabajadores/director-general.png" alt=""></div>
+          <p class="cargo">
+          Director General
+          </p>
+        </section></swiper-slide>
+        <swiper-slide>
+        <section class="trabajador">
+        <div class="contenedor-img">
+          <img src="trabajadores/director-de-switcher.png" alt=""></div>
           <p class="cargo">
           Director de Switcher
           </p>
@@ -28,14 +36,14 @@ register();
         <swiper-slide>
         <section class="trabajador">
         <div class="contenedor-img">
-          <img src="trabajadores/Luminotecnico.png" alt=""></div>
+          <img src="trabajadores/directora-de-arte.png" alt=""></div>
           <p class="cargo">
-          Asistente de Luces
+          Directora de Arte
           </p>
         </section></swiper-slide>
         <swiper-slide>
         <section class="trabajador">
-        <div class="contenedor-img">
+          <div class="contenedor-img">
           <img src="trabajadores/camarografo.png" alt=""></div>
           <p class="cargo">
           Camarógrafo
@@ -44,9 +52,33 @@ register();
         <swiper-slide>
         <section class="trabajador">
           <div class="contenedor-img">
-          <img src="trabajadores/directora-de-arte.png" alt=""></div>
+          <img src="trabajadores/fotografo.png" alt=""></div>
           <p class="cargo">
-          Directora de arte
+          Fotógrafo
+          </p>
+        </section></swiper-slide>
+        <swiper-slide>
+        <section class="trabajador">
+          <div class="contenedor-img">
+          <img src="trabajadores/Luminotecnico.png" alt=""></div>
+          <p class="cargo">
+          Luminotécnico
+          </p>
+        </section></swiper-slide>
+        <swiper-slide>
+        <section class="trabajador">
+          <div class="contenedor-img">
+          <img src="trabajadores/asistente-de-produccion.png" alt=""></div>
+          <p class="cargo">
+          Asistente de Producción
+          </p>
+        </section></swiper-slide>
+        <swiper-slide>
+        <section class="trabajador">
+          <div class="contenedor-img">
+          <img src="trabajadores/equipo-tecnico.png" alt=""></div>
+          <p class="cargo">
+          Equipo Técnico
           </p>
         </section></swiper-slide>
       </swiper-container>
@@ -65,42 +97,40 @@ export class EquipoComponent {
   ngOnInit(): void {
     const swiperElemConstructor = document.querySelector('.swiper-equipo');
     const swiperOptions: SwiperOptions = {
-      navigation:{
-        enabled:true,
-        nextEl:'.swiper-button-next',
-        prevEl:'.swiper-button-prev',
-      },
       slidesPerView: 1.8,
       speed: 1000,
       initialSlide: 2,
+      grid: {rows: 2, fill: 'row'},
+      autoplay: true,
       spaceBetween: 30,
       breakpoints: {
         0:{
           slidesPerView:1.5,
           allowTouchMove: true,
+          initialSlide: 2,
           loop: true,
         },
         800:{
           slidesPerView:3,
           allowTouchMove: true,
           loop: true,
-          centeredSlides: true,
         },
         1200: {
           slidesPerView:3,
           loop: true,
           allowTouchMove: true,
-          centeredSlides: true,
         },
         1400: {
           slidesPerView:3,
           loop: true,
           allowTouchMove: true,
+          initialSlide: 3,
         },
         1500: {
           slidesPerView:4,
           loop: true,
           allowTouchMove: true,
+          
         },
         1600: {
           slidesPerView:4,

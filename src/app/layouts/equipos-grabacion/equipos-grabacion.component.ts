@@ -19,10 +19,9 @@ register();
         <swiper-container init=false class="swiper-equipos">
           <swiper-slide>
               <app-equipos
-              title="Sony A72"
-              description="Camara de video y fotografia profesional"
-              image="equipos/sony-a72.png"
-              ></app-equipos>
+              title="Blackmagic Pocket Cinema  6K Pr0"
+              description="Camara de video y fotografía profesional"
+              image="equipos/blackmagic-pocket-cinema-6k-pro.png"></app-equipos>
           </swiper-slide>
           <swiper-slide>
               <app-equipos
@@ -33,9 +32,10 @@ register();
           </swiper-slide>
           <swiper-slide>
               <app-equipos
-              title="Blackmagic Pocket Cinema  6K Pr0"
-              description="Camara de video y fotografía profesional"
-              image="equipos/blackmagic-pocket-cinema-6k-pro.png"></app-equipos>
+              title="Sony A72"
+              description="Camara de video y fotografia profesional"
+              image="equipos/sony-a72.png"
+              ></app-equipos>
           </swiper-slide>
           <swiper-slide>
               <app-equipos
@@ -56,6 +56,13 @@ register();
               title="Hollyland lark m2"
               description="Micrófono inalámbrico ultraligero. Es perfecto para vloggers, podcasters, etc."
               image="equipos/hollyland-lark-m2.png"
+              ></app-equipos>
+          </swiper-slide>
+          <swiper-slide>
+              <app-equipos
+              title="RØDECaster Pro II "
+              description="Consola versátil diseñada para podcasting, grabación, mezcla y transmisión profesional."
+              image="equipos/rodecaster-pro-2.png"
               ></app-equipos>
           </swiper-slide>
           <swiper-slide>

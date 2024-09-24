@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   ],
   template: `
   <header>
-    <h1>Nuestros Socios</h1>
+    <h1>Nuestros Socios Estratégicos</h1>
     <main>
       <img class="dron" src="icons/dron.svg" alt="">
       <img class="dron" src="icons/dron.svg" alt="">

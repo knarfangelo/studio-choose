@@ -28,11 +28,12 @@ register();
         <swiper-slide>
           <app-cards image="icons/live.svg" title="LIVE STREAMING" description="Transmite a varias cámaras con sonido e iluminación profesional."></app-cards>
         </swiper-slide>
-        <swiper-slide>
-          <app-cards image="icons/shopping.svg" title="LIVE SHOPPING" description="Soluciones para la venta de productos y servicios en live streaming."></app-cards>
-        </swiper-slide>
+   
         <swiper-slide>
           <app-cards image="icons/eventos.svg" title="EVENTOS" description="Estudios portátiles o móviles desarrollados para eventos o activaciones."></app-cards>
+        </swiper-slide>
+        <swiper-slide>
+          <app-cards image="icons/shopping.svg" title="LIVE SHOPPING" description="Soluciones para la venta de productos y servicios en live streaming."></app-cards>
         </swiper-slide>
       </swiper-container>
     </section>

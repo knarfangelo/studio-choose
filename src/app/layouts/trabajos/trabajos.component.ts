@@ -14,35 +14,35 @@ register();
 ],
   template: `
     <header>
-      <h1>Conoce nuestro trabajo <br><span class="text">Streams de alta calidad</span></h1>
+      <h1>Portafolio</h1>
       <main>
         <div class="panel-1">
-          <img src="trabajos/trabajo1.jpeg" alt="">
-          <img  src="trabajos/trabajo4.png" alt="">
+          <img src="trabajos/trabajo1.png" alt="">
+          <img  src="trabajos/trabajo3.png" alt="">
         </div>
         <div class="panel-2">
-          <img class="img2" src="trabajos/trabajo3.jpeg" alt="">
-          <img src="trabajos/trabajo2.jpeg" alt="">
+          <img class="img2" src="trabajos/trabajo4.jpg" alt="">
+          <img src="trabajos/trabajo2.png" alt="">
         </div>
       </main>
       <swiper-container init=false class="swiper-trabajos">
         <swiper-slide>
         <app-trabajos-responsive
-        image="trabajos/trabajo1.jpeg"
+        image="trabajos/trabajo1.png"
         ></app-trabajos-responsive>
         </swiper-slide>
         <swiper-slide>
         <app-trabajos-responsive
-        image="trabajos/trabajo2.jpeg">
+        image="trabajos/trabajo2.png">
         </app-trabajos-responsive>
         </swiper-slide>
         <swiper-slide>
         <app-trabajos-responsive
-        image="trabajos/trabajo3.jpeg"></app-trabajos-responsive>
+        image="trabajos/trabajo3.png"></app-trabajos-responsive>
         </swiper-slide>
         <swiper-slide>
         <app-trabajos-responsive
-        image="trabajos/trabajo4.png"></app-trabajos-responsive>
+        image="trabajos/trabajo4.jpg"></app-trabajos-responsive>
         </swiper-slide>
       </swiper-container>
     </header>

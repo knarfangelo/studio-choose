@@ -1,13 +1,15 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { TraductorComponent } from "../../components/traductor/traductor.component";
 
 @Component({
   selector: 'app-studio',
   standalone: true,
   imports: [
     CommonModule,
-  ],
+    TraductorComponent
+],
   animations: [
     trigger('enterState', [
       state('void', style({
@@ -36,12 +38,13 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <div class="parrafo">
         Con una presencia internacional, estamos orgullosos de haber influido en empresas de todo el mundo, y nuestra pasión por la innovación nos impulsa a crear un futuro aún más brillante en el ámbito digital.
         </div></div>
-        <div class="part-2"><div class="trabajemos">
+        <a href="https://chooseagencia.com/#contactanos" target="_blank" class="part-2"><div class="trabajemos">
           <img src="icons/flecha.svg" alt="">
           <p>Trabajemos juntos</p></div>
           <img src="icons/play.svg" alt="">
-        </div>
+        </a>
       </main>
+
     </section>
   `,
   styleUrl: './studio.component.css',
