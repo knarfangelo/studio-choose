@@ -71,7 +71,6 @@ register();
               description="Conmutador compacto para transmisión en vivo, grabación, y producción de video."
               image="equipos/blackmagic-atem-mini-pro.png"></app-equipos>
           </swiper-slide>
-          
         </swiper-container>
       </main>
     </header>

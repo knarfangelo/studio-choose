@@ -1,46 +1,58 @@
 header{
   background: #0E2A52;
-  min-height: 1200px;
-  width: 100%;
+  padding-bottom: 500px;
 }
 h1{
   color: #F9C75E;
 font-family: Poppins;
-text-align: center;
-margin: 0;
 font-size: 54px;
 font-style: normal;
-padding: 0 25px;
 font-weight: 700;
 line-height: normal;
-margin-bottom: 185px;
+text-align: center;
+margin: 0;
 }
-main{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-evenly;
-}
-.dron{
-  width: 33%;
-  max-width: 355px;
-  box-sizing: border-box;
-  padding: 40px;
+h1{
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
-@media (width < 900px) {
+app-equipos{
+  width: 205px;
+}
+
+main{
+  width: 90%;
+  margin: auto;
+}
+swiper-container{
+  display: flex;
+  height: auto;
+  flex-grow: 1;    /* Ambas cajas pueden crecer de manera equitativa */
+  flex-shrink: 1;  /* Ambas cajas pueden encogerse de manera equitativa si es necesario */
+  flex-basis: 0;   /* Ambas cajas empiezan desde el mismo tamaño base */
+}
+swiper-slide{
+  height: auto;
+}
+.dron{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 100px auto;
+}
+
+@media (width < 900px){
   h1{
     font-size: 35px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0 10px;
+
   }
   main{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-  h1{
-    margin-bottom: 50px;
-  }
-  .dron{
-    width: 100%;
+    padding: 0;
   }
 }
+

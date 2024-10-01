@@ -1,60 +1,14 @@
 header{
-  background:#0E2A52;
+  background: var(--Color-6, #0E2A52);
 }
-h1{
-  color: #F9C75E;
-text-align: center;
-font-family: Poppins;
-font-size: 51.2px;
-margin: 0;
-padding-top: 200px;
-padding-bottom: 80px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-main{
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  padding: 0 30px;
-}
-app-trabajos-responsive{
-  height: 300px;
-}
-.panel-1, .panel-2{
-  display: flex;
-  flex-direction: column;
-}
-
-.panel-1{
-  gap: 192px;
-}
-.panel-2{
-  gap: 194px;
-}
-img{
-  width: 100%;
-}
-.img2{
-  padding-top: 156px;
-}
-swiper-container{
+app-swiper-trabajos{
   display: none;
 }
-@media (width < 900px){
-  h1{
-    font-size: 35px;
-    padding-bottom: 47px;
-    margin: 0 10px;
+@media (width < 800px){
+  app-windows-trabajos{
+    display: none;
   }
-  swiper-container{
+  app-swiper-trabajos{
     display: block;
-  }
-  main{
-    display: none;
-  }
-  .text{
-    display: none;
   }
 }
